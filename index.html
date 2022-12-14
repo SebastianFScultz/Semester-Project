@@ -7,32 +7,46 @@
     <meta name="description" content="Home page for Community Science Museum">
     <title>Home</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/c00d48ffc1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div class="conainer">
-            <img src="images/scott-webb-102825.jpg" alt="Background image for header" class="header_image">
-            <div class="centered">Community Science Museum</div>
-        </div>
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibition_spaces.html">Exhibition spaces</a>
+            <a href="special_events_and_exhibitions.html">Special events and exhibitions</a>
+            <a href="visit.html">Visit</a>
+            <a href="get_involved.html">Get involved</a>
+        </nav>
     </header>
     <main>
+        <h1 class="page_title">Community Science Museum</h1>
         <section>
-            <a href="explore.html" class="link">Explore</a>
-            <a href="get_involved.html" class="link">Get involved</a>
-            <a href="visit.html" class="link">Visit</a>
-            <a href="special_events_and_exhibition_spaces.html" class="link">Special events and exhibitions</a>
-            <a href="exhibition_spaces.html" class="link">Exhibition spaces</a>
+            <img src="images/exhibition-1863344_1920.jpg" alt="animated picture inside of a museum" class="images">
         </section>
-        <section>
-            <img src="images/exhibition-1863344_1920.jpg" alt="animated picture inside of a museum" class="home_page_image">
-        </section>
-        <section>
-            <p>“Explore together”</p>
+        <section class="text">
+            <p class="small_header">“Explore together”</p>
             <p>Come join us at the Community Science Museum where we’re committed to making science accessible to all.
             Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.
             The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.
             We believe science should not be confined to the textbook, but brought to live through exhibits. This is why we have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science come to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home).</p>
         </section>
     </main>
+    <footer>
+        <div class="footer_content">
+            <p>Follow us:</p>
+            <ul class="socials">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-youtube"></i></li>
+            </ul>
+        </div>
+        <div class="footer_bottom">
+            <p>copyright &copy 2022 All rights reserved</p>
+        </div> 
+    </footer>
 </body>
 </html>

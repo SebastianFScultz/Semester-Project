@@ -1,68 +1,168 @@
+* {
+    margin: 0%;
+}
+
 body {
     background-color: #845EC2;
+}
+
+main {
     color: white;
 }
 
-/* header */
-.header_image {
+.page_title {
+    text-align: center;
+    background-color: #318EAB;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 32px;
+    margin: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.text {
+    margin: 10px 50px 50px 50px;
+}
+
+.small_header {
+    font-size: 20px;
+    text-decoration: underline;
+    margin: 10px 0px 10px 0px;
+}
+
+.images {
     width: 100%;
-    max-height: 200px;
+    box-shadow: 5px 5px 5px black;
+
 }
 
-.container {
+/* header */
+nav,
+#menu-checkbox {
+    display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+    display: block;
+}
+
+.hamburger-icon {
+    font-size: 20px;
+}
+
+nav a {
+    display: block;
+    color: black;
+    padding: 10px;
+}
+
+header {
     position: relative;
+    background-color:#DEF4FE;
+    padding: 10px;
+    
 }
 
-.centered {
+nav {
+    position: absolute;
+    background-color:#DEF4FE;
+    width: 100%;
+    left: 0px;
+    border: 1px solid black;
+}
+
+a:hover {
     background-color: #318EAB;
     color: white;
-    padding: 10px;
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-/* header */
-
-/* home page main */
-.link {
-    color: black;
-    background-color: #DEF4FE;
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 5px;
 }
 
-.home_page_image {
-    width: 100%;
-    height: 300px;
+a:active {
+    background-color: #318EAB;
+    color: white;
 }
-/* home page main */
-
-/* explore page */
-.astronaut_image {
-    width: 100%;
-    height: 400px;
-}
-/* explore page */
-
-/* get involved page */
-.heart_image {
-    width: 100%;
-    height: 400px;
-}
-/* get involved page */
 
 /* visit page */
 .inside_museum_image {
-    width: 40%;
-    height: 500px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 5px black;
 }
-/* visit page */
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.image1 {
+    margin: 5px;
+}
+
+.image2 {
+    margin: 5px;
+}
 
 /* special events and exhibiotion spaces */
-.vr_image {
+.skeleton_image, .vr_image {
     width: 100%;
-    height: 400px;
+    height: 100%;
+    box-shadow: 5px 5px 5px black;
 }
-/* special events and exhibiotion spaces */
+
+/* footer */
+footer {
+    background-color: #DEF4FE;
+    padding: 20px;
+}
+
+.footer_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+   
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.socials li {
+    margin: 10px 40px 0px 10px;
+    font-size: 20px;
+}
+
+.socials li:hover {
+    color: #318EAB;
+}
+
+.footer_bottom {
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+
+@media (min-width: 730px) {
+   
+
+    nav {
+        display: block;
+        position: static;
+        text-align: center;
+        border: none;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+    
+    nav a {
+        display: inline-block;
+        
+    }
+}
